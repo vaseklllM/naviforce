@@ -1579,6 +1579,7 @@ body {
     top: 287px;
     width: auto;
     left: 264px;
+    display: none;
   }
   .header .down-arrow img {
     width: 9px;
@@ -1688,6 +1689,265 @@ body {
   }
   .content-block-5 .content .comment .right {
     width: 340px;
+  }
+  .content-block-5 .content .comment .right h3 {
+    font-size: 12px;
+  }
+  .content-block-5 .content .comment .right p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    height: 620px;
+  }
+  .header .left {
+    width: auto;
+    padding-bottom: 15px;
+  }
+  .header .left .black-backcround {
+    top: auto;
+    transform: none;
+    width: 295px;
+    height: 250px;
+  }
+  .header .left .black-backcround .position-left .block-top h1 {
+    font-size: 18px;
+  }
+  .header .left .black-backcround .position-left .block-top span {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .header .left .black-backcround .position-left .block-time #clockdiv {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .header .left .black-backcround .position-left .block-bottom span {
+    width: 180px;
+    font-size: 8px;
+  }
+  .header .left .black-backcround .position-left .block-button {
+    width: 70%;
+    margin-top: 10px;
+  }
+  .header .left .black-backcround .position-left .block-button a .buy, .header .left .black-backcround .position-left .block-button a .info {
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+  .header .right {
+    width: auto;
+    padding-top: 15px;
+  }
+  .header .right .position-right {
+    transform: none;
+    top: auto;
+  }
+  .header .right .position-right h1 {
+    width: 260px;
+    font-size: 10px;
+  }
+  .header .right .position-right .img-min img {
+    width: 300px;
+  }
+  .header .down-arrow {
+    top: 287px;
+    width: auto;
+    left: 264px;
+  }
+  .header .down-arrow img {
+    width: 9px;
+  }
+
+  .content-block-1 {
+    height: 600px;
+  }
+  .content-block-1 .top-txt h1 {
+    font-size: 12px;
+    padding-top: 25px;
+  }
+  .content-block-1 .top-txt h1 .left::before {
+    left: -14px;
+    top: -8px;
+    height: 25px;
+    width: 12px;
+  }
+  .content-block-1 .top-txt h1 .right::after {
+    right: -14px;
+    top: -8px;
+    height: 25px;
+    width: 12px;
+  }
+  .content-block-1 .center-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-block-1 .center-content .left {
+    width: auto;
+  }
+  .content-block-1 .center-content .left .movie {
+    top: 35px;
+  }
+  .content-block-1 .center-content .left .movie iframe {
+    width: 280px;
+    height: 165px;
+  }
+  .content-block-1 .center-content .right {
+    width: auto;
+  }
+  .content-block-1 .center-content .right .info-block {
+    width: 100%;
+  }
+  .content-block-1 .center-content .right .info-block .info .row {
+    justify-content: start;
+    margin-left: 25px;
+  }
+  .content-block-1 .center-content .right .info-block .info .row img[alt="tint"] {
+    width: 15px;
+  }
+  .content-block-1 .center-content .right .info-block .info .row img[alt="circle-notch"] {
+    width: 15px;
+  }
+  .content-block-1 .center-content .right .info-block .info .row img[alt="clock"] {
+    width: 15px;
+  }
+  .content-block-1 .center-content .right .info-block .info .row h2 {
+    font-size: 12px;
+  }
+  .content-block-1 .center-content .right .info-block .info .row h2 br {
+    display: none;
+  }
+  .content-block-1 .center-content .right .info-block .info .row h2 .bottom {
+    margin-left: 3px;
+  }
+  .content-block-1 .center-content .right .info-block .info p {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .content-block-2 .top-txt h1 {
+    font-size: 12px;
+    padding-top: 25px;
+  }
+  .content-block-2 .top-txt h1 .left::before {
+    left: -14px;
+    top: -8px;
+    height: 25px;
+    width: 12px;
+  }
+  .content-block-2 .top-txt h1 .right::after {
+    right: -14px;
+    top: -8px;
+    height: 25px;
+    width: 12px;
+  }
+  .content-block-2 .center-block {
+    flex-wrap: inherit;
+    flex-direction: column;
+  }
+  .content-block-2 .center-block .white-border {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content-block-2 .center-block .white-border .img-1 img, .content-block-2 .center-block .white-border .img-2 img, .content-block-2 .center-block .white-border .img-3 img, .content-block-2 .center-block .white-border .img-4 img {
+    width: 180px;
+  }
+  .content-block-2 .bottom-content {
+    width: 280px;
+  }
+  .content-block-2 .bottom-content img {
+    width: 280px;
+    height: 197px;
+  }
+
+  .content-block-3 .top-txt {
+    padding-top: 15px;
+  }
+  .content-block-3 .top-block-info {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-block-3 .top-block-info .info-bl {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 220px;
+  }
+  .content-block-3 .top-block-info .info-bl h3 {
+    font-size: 14px;
+  }
+  .content-block-3 .top-block-info .info-bl p {
+    font-size: 10px;
+  }
+  .content-block-3 .bottom-block-info {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .content-block-3 .bottom-block-info .left {
+    margin-bottom: 0px;
+  }
+  .content-block-3 .bottom-block-info .left h3, .content-block-3 .bottom-block-info .right h3 {
+    font-size: 14px;
+  }
+  .content-block-3 .bottom-block-info .left p, .content-block-3 .bottom-block-info .right p {
+    font-size: 10px;
+  }
+
+  .content-block-4 .top h1 {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+  .content-block-4 .top h1 .span-bottom .right {
+    font-size: 16px;
+  }
+  .content-block-4 .content .left {
+    display: none;
+  }
+  .content-block-4 .content .right .buy {
+    width: 270px;
+  }
+  .content-block-4 .content .right .buy h1 {
+    font-size: 10px;
+  }
+  .content-block-4 .content .right .buy h1 .price-uah, .content-block-4 .content .right .buy h1 .new-price-uah {
+    font-size: 11px;
+  }
+  .content-block-4 .content .right .buy hr {
+    width: 170px;
+  }
+  .content-block-4 .content .right .buy form input {
+    width: 185px;
+  }
+  .content-block-4 .content .right .buy form input[placeholder] {
+    font-size: 13px;
+  }
+  .content-block-4 .content .right .buy form .txt .spantxt {
+    left: 70px;
+    top: 8px;
+    font-size: 10px;
+  }
+  .content-block-4 .content .right .buy form select {
+    width: 185px;
+    font-size: 10px;
+    padding-left: 55px;
+  }
+
+  .content-block-5 .top h1 {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .content-block-5 .content .comment {
+    width: 100%;
+  }
+  .content-block-5 .content .comment .left img {
+    width: 50px;
+  }
+  .content-block-5 .content .comment .right {
+    width: 75%;
   }
   .content-block-5 .content .comment .right h3 {
     font-size: 12px;

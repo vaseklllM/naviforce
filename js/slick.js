@@ -39,9 +39,10 @@ $('.slider').slick({
         {
             breakpoint: 576,
             settings: {
-               centerPadding: '70px',
-               arrows: false,                
+               centerPadding: '0px',
+               arrows: false,  
+               dots: false,              
             }
-        },
+        },   
     ]
 });
