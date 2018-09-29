@@ -2151,6 +2151,9 @@ body {
     font-size: 10px;
     padding-left: 55px;
   }
+  .content-block-4 .content .right .buy form button {
+    width: 195px;
+  }
 
   .content-block-5 .top h1 {
     font-size: 14px;
