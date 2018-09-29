@@ -1785,7 +1785,8 @@ body {
          .left{
              width: auto;
              padding-bottom: 15px;
-             .black-backcround{    
+             .black-backcround{ 
+                box-shadow: none;   
                  top: auto;
                  transform: none;
                  width: 295px;
@@ -1794,11 +1795,13 @@ body {
                      .block-top{
                          h1{
                            font-size: 18px;
+                           text-shadow: none;
                          }
                          span{
                            font-size: 12px;
                            margin-top: 5px;
                            margin-bottom: 10px;
+                           text-shadow: none;
                          }
                      }
                      .block-time{
@@ -1810,7 +1813,8 @@ body {
                      .block-bottom{
                          span{
                              width: 180px;
-                             font-size: 8px;                            
+                             font-size: 8px;   
+                             text-shadow: none;                         
                          }
                      }
                      .block-button{
@@ -2131,7 +2135,8 @@ body {
          .left{
              width: auto;
              padding-bottom: 15px;
-             .black-backcround{    
+             .black-backcround{   
+                box-shadow: none; 
                  top: auto;
                  transform: none;
                  width: 295px;
@@ -2140,11 +2145,13 @@ body {
                      .block-top{
                          h1{
                            font-size: 18px;
+                           text-shadow: none;
                          }
                          span{
                            font-size: 12px;
                            margin-top: 5px;
                            margin-bottom: 10px;
+                           text-shadow: none;
                          }
                      }
                      .block-time{
@@ -2156,7 +2163,8 @@ body {
                      .block-bottom{
                          span{
                              width: 180px;
-                             font-size: 8px;                            
+                             font-size: 8px; 
+                             text-shadow: none;                           
                          }
                      }
                      .block-button{

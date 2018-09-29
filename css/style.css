@@ -1687,6 +1687,8 @@ body {
     padding-bottom: 15px;
   }
   .header .left .black-backcround {
+    -webkit-box-shadow: none;
+            box-shadow: none;
     top: auto;
     -webkit-transform: none;
             transform: none;
@@ -1695,11 +1697,13 @@ body {
   }
   .header .left .black-backcround .position-left .block-top h1 {
     font-size: 18px;
+    text-shadow: none;
   }
   .header .left .black-backcround .position-left .block-top span {
     font-size: 12px;
     margin-top: 5px;
     margin-bottom: 10px;
+    text-shadow: none;
   }
   .header .left .black-backcround .position-left .block-time #clockdiv {
     font-size: 18px;
@@ -1708,6 +1712,7 @@ body {
   .header .left .black-backcround .position-left .block-bottom span {
     width: 180px;
     font-size: 8px;
+    text-shadow: none;
   }
   .header .left .black-backcround .position-left .block-button {
     width: 70%;
@@ -1883,6 +1888,8 @@ body {
     padding-bottom: 15px;
   }
   .header .left .black-backcround {
+    -webkit-box-shadow: none;
+            box-shadow: none;
     top: auto;
     -webkit-transform: none;
             transform: none;
@@ -1891,11 +1898,13 @@ body {
   }
   .header .left .black-backcround .position-left .block-top h1 {
     font-size: 18px;
+    text-shadow: none;
   }
   .header .left .black-backcround .position-left .block-top span {
     font-size: 12px;
     margin-top: 5px;
     margin-bottom: 10px;
+    text-shadow: none;
   }
   .header .left .black-backcround .position-left .block-time #clockdiv {
     font-size: 18px;
@@ -1904,6 +1913,7 @@ body {
   .header .left .black-backcround .position-left .block-bottom span {
     width: 180px;
     font-size: 8px;
+    text-shadow: none;
   }
   .header .left .black-backcround .position-left .block-button {
     width: 70%;
