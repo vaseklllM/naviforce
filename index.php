@@ -9,10 +9,7 @@
         $name = htmlspecialchars ($_POST["name"]);        
         $phone = htmlspecialchars ($_POST["phone"]); 
         $TypeProduct = htmlspecialchars ($_POST["TypeProduct"]);         
-        $smsmail = "Имя: $name <br> Номер телефона:  $phone <br> Назва продукта: $TypeProduct";
-        $_SESSION["name"] = $name;
-        $_SESSION["phone"] = $phone;
-        $_SESSION["TypeProduct"] = $TypeProduct;       
+        $smsmail = "Имя: $name <br> Номер телефона:  $phone <br> Назва продукта: $TypeProduct";       
         $error = false;
         if(strlen($name) == 0 ){
             $error_name="Введите имя";
@@ -26,7 +23,7 @@
             $subject = "=?utf-8?B?".base64_encode($subject)."?=";                     
             $headers = "Content-type: text/html; charset=utf-8\r\n";            
             $headers .= "From: $from";
-           // $headers .= "Reply-to: $from";
+           // $headers .= "Reply-to: $from";         
 
             mail ($to, $subject, $smsmail, $headers);
             header ("Location: seccess.php?temppages=1");
@@ -34,6 +31,7 @@
         }
     }
 ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -340,11 +338,11 @@
                         <span class="new-price-uah">799 грн.</span>
                     </h1>
                     <hr>
-                    <form action="" name="feedback" method="post">
-                        <input type="text" name="name" placeholder="введите ваше имя" value="<?php echo $_SESSION["name"]?>">
+                    <form autocomplete="on" name="feedback" method="post">
+                        <input type="text" name="name" placeholder="Введите ваше имя">
                         <span style="color:red;text-align: center;display: block;"><?php echo $error_name ?></span>
                         <br>  
-                        <input type="text" name="phone" placeholder="введите ваш телефон" value="<?php echo $_SESSION["phone"]?>">
+                        <input type="text" name="phone" placeholder="Введите ваш телефон">
                         <span style="color:red;text-align: center;display: block;"><?php echo $error_phone?></span>
                         <br> 
                         <div class="txt">
