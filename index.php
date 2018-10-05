@@ -339,10 +339,10 @@
                     </h1>
                     <hr>
                     <form autocomplete="on" name="feedback" method="post">
-                        <input type="text" name="name" placeholder="Введите ваше имя">
+                        <input type="text" name="name" required placeholder="Введите ваше имя">
                         <span style="color:red;text-align: center;display: block;"><?php echo $error_name ?></span>
                         <br>  
-                        <input type="text" name="phone" placeholder="Введите ваш телефон">
+                        <input type="text" name="phone" required placeholder="Введите ваш телефон">
                         <span style="color:red;text-align: center;display: block;"><?php echo $error_phone?></span>
                         <br> 
                         <div class="txt">
