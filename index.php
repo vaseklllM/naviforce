@@ -16,5 +16,5 @@
         header ("Location: seccess.php?temppages=1");
         exit;
     }
-    require_once 'struct/header.html';
+    require_once 'struct/index.html';
 ?>
