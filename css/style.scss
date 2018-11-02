@@ -79,7 +79,7 @@ $txt-shadow: 0 0 30px black, 0 0 50px black, 0 0 50px black, 0 0 60px black;
       -webkit-transform: scale3d(1, 1, 1);
       transform: scale3d(1, 1, 1);
     }
-  }
+}
   
 body {
     font-family: $SFUIDisplay-regular; 
@@ -200,10 +200,11 @@ body {
     }
     .right{
         width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .position-right{
             position: relative;
-            top: 55%;
-            transform: translateY(-50%);
             h1{                
                 color: white;
                 text-shadow: $txt-shadow;
@@ -751,8 +752,7 @@ body {
             } 
         }
         .right{
-            .position-right{
-                top: 50%;
+            .position-right{                
                 h1{
                     width: 520px;
                     font-size: 20px;
@@ -1073,8 +1073,7 @@ body {
              } 
          }
          .right{
-             .position-right{
-                 top: 50%;
+             .position-right{                 
                  h1{
                      width: 300px;
                      font-size: 15px;
@@ -1434,7 +1433,6 @@ body {
          }
          .right{
              .position-right{
-                 top: 52%;
                  h1{
                      width: 260px;
                      font-size: 10px;

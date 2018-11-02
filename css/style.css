@@ -145,11 +145,12 @@ body {
             .header .left .black-backcround .position-left .block-button .info:hover {
               background-color: rgba(0, 0, 0, 0); }
   .header .right {
-    width: 50%; }
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .header .right .position-right {
-      position: relative;
-      top: 55%;
-      transform: translateY(-50%); }
+      position: relative; }
       .header .right .position-right h1 {
         color: white;
         text-shadow: 0 0 30px black, 0 0 50px black, 0 0 50px black, 0 0 60px black;
@@ -563,13 +564,11 @@ body {
       .header .left .black-backcround .position-left .block-button a .buy, .header .left .black-backcround .position-left .block-button a .info {
         padding: 10px 22px;
         font-size: 18px; }
-  .header .right .position-right {
-    top: 50%; }
-    .header .right .position-right h1 {
-      width: 520px;
-      font-size: 20px; }
-    .header .right .position-right .img-min img {
-      width: 500px; }
+  .header .right .position-right h1 {
+    width: 520px;
+    font-size: 20px; }
+  .header .right .position-right .img-min img {
+    width: 500px; }
   .header .down-arrow img {
     width: 30px; }
 
@@ -744,13 +743,11 @@ body {
       .header .left .black-backcround .position-left .block-button a .buy, .header .left .black-backcround .position-left .block-button a .info {
         padding: 7px 18px;
         font-size: 13px; }
-  .header .right .position-right {
-    top: 50%; }
-    .header .right .position-right h1 {
-      width: 300px;
-      font-size: 15px; }
-    .header .right .position-right .img-min img {
-      width: 425px; }
+  .header .right .position-right h1 {
+    width: 300px;
+    font-size: 15px; }
+  .header .right .position-right .img-min img {
+    width: 425px; }
   .header .down-arrow img {
     width: 20px; }
 
@@ -962,13 +959,11 @@ body {
       .header .left .black-backcround .position-left .block-button a .buy, .header .left .black-backcround .position-left .block-button a .info {
         padding: 5px 15px;
         font-size: 10px; }
-  .header .right .position-right {
-    top: 52%; }
-    .header .right .position-right h1 {
-      width: 260px;
-      font-size: 10px; }
-    .header .right .position-right .img-min img {
-      width: 370px; }
+  .header .right .position-right h1 {
+    width: 260px;
+    font-size: 10px; }
+  .header .right .position-right .img-min img {
+    width: 370px; }
   .header .down-arrow img {
     width: 15px; }
 
