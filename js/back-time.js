@@ -36,8 +36,13 @@ function getTimeRemaining(endtime) {
     updateClock();
     var timeinterval = setInterval(updateClock, 1000);
   }
-   
+  // var timeDay = 3; //  rest of days
+  // var timeHours = 7; // rest of hours
+  // var timeMinutes = 2; // rest of minutes
+  // var timeSecound = 37; // rest of secound
+  // var dateTime = (( timeDay * 24 * 60 * 60 ) + ((timeHours * 60 * 60) + (timeMinutes * 60))) + timeSecound;
   var deadline="January 01 2018 00:00:00 GMT+0300"; //for Ukraine
-  var deadline = new Date(Date.parse(new Date()) + 1 * 22 * 60 * 60 * 1000); // for endless timer
+  var deadline = new Date(Date.parse(new Date()) + <?echo ($time);?> * 1000); // for endless timer
+
   initializeClock('clockdiv', deadline);
   initializeClock('clockdivtwo', deadline);

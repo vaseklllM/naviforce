@@ -16,5 +16,35 @@
         header ("Location: seccess.php?temppages=1");
         exit;
     }
-    require_once 'struct/index.html';
+    
+    
+    $datetime1 = new DateTime(date("Ymd"));//Получаем текущую дату
+    $datetime2 = new DateTime('20181104');//Дата события, где 2017-это год, 09-это месяц и 10 - день события     
+     
+    $datetime3 = new DateTime(date("H:i:s"));//Получаем текущее время
+    $datetime4 = new DateTime('23:59:59');//Время события где первые 00 - Это часы, вторые - это минуты и последние - это сек     
+     
+    $interval1 = $datetime1->diff($datetime2);
+    $interval2 = $datetime3->diff($datetime4);    
+    
+    // echo $interval1->format('До события: %y Лет %m Месяцев %d Дней');
+    // echo $interval2->format(' %h Часов %i Минут %s Секунд');
+    
+    $realtimeday = $interval1->format('%d');
+    $realtimehours = $interval2->format('%h');
+    $realtimeminutes = $interval2->format('%i');
+    $realtimesecounds = $interval2->format('%s');
+
+    
+    // переводжу в секунды
+    $newDay = $realtimeday * 24 * 60 * 60; 
+    $newHours = $realtimehours * 60 * 60;
+    $newMinutes = $realtimeminutes * 60;
+    $time = $newDay + $newHours + $newMinutes + $realtimesecounds;
+    
+    require_once 'struct/index.html'; 
+
+    echo ('<script>');
+    require_once 'js/back-time.js';
+    echo ('</script>');    
 ?>
