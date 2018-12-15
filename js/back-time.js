@@ -43,6 +43,6 @@ function getTimeRemaining(endtime) {
   // var dateTime = (( timeDay * 24 * 60 * 60 ) + ((timeHours * 60 * 60) + (timeMinutes * 60))) + timeSecound;
   var deadline="January 01 2018 00:00:00 GMT+0300"; //for Ukraine
   var deadline = new Date(Date.parse(new Date()) + <?echo ($time);?> * 1000); // for endless timer
-
+  
   initializeClock('clockdiv', deadline);
   initializeClock('clockdivtwo', deadline);

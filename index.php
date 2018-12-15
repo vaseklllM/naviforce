@@ -19,11 +19,15 @@
     
     
     $datetime1 = new DateTime(date("Ymd"));//Получаем текущую дату
-    $datetime2 = new DateTime('20181220');//Дата события, где 2017-это год, 09-это месяц и 10 - день события     
+    $datetime2 = new DateTime('20181220');//Дата события, где 2017-это год, 09-это месяц и 10 - день события 
+        
+    // print_r($datetime1);
      
     $datetime3 = new DateTime(date("H:i:s"));//Получаем текущее время
     $datetime4 = new DateTime('23:59:59');//Время события где первые 00 - Это часы, вторые - это минуты и последние - это сек     
      
+    // print_r($datetime3);
+
     $interval1 = $datetime1->diff($datetime2);
     $interval2 = $datetime3->diff($datetime4);    
     
@@ -41,6 +45,7 @@
     $newHours = $realtimehours * 60 * 60;
     $newMinutes = $realtimeminutes * 60;
     $time = $newDay + $newHours + $newMinutes + $realtimesecounds;
+
     
     require_once 'struct/index.html'; 
 
